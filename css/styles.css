@@ -72,6 +72,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -166,6 +168,9 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title {
@@ -242,6 +247,7 @@ img {
   background-color: #f4f4fd;
   margin-bottom: 8px;
   padding: 24px 96px;
+  height: 112px;
 }
 
 .features-list-text {
@@ -294,6 +300,11 @@ img {
   background-color: #404bbf;
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+
 .card-content {
   text-align: center;
   padding: 32px 0;
@@ -337,25 +348,26 @@ img {
 .project-list-item {
   background-color: #ffffff;
   width: calc((100% - 48px) / 3);
-  position: relative;
-  overflow: hidden;
+
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.project-img-container {
+  position: relative;
+  overflow: hidden;
+}
 .overlay {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #4d5ae5;
-  padding: 32px;
+  padding: 40px 32px;
   position: absolute;
   transform: translateY(100%);
   width: 100%;
-  height: 300px;
+  height: 100%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -413,6 +425,7 @@ img {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-links {
@@ -422,9 +435,14 @@ img {
   gap: 16px;
 }
 
-.footer-social-link {
+.footer-social-links-item {
   width: 40px;
   height: 40px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,5 +474,14 @@ img {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 /* ==================== /Page footer styles ====================*/
