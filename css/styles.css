@@ -246,7 +246,6 @@ img {
   border-radius: 4px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
-  padding: 24px 96px;
   height: 112px;
 }
 
@@ -293,11 +292,6 @@ img {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.team-list-item:hover .social-link,
-.team-list-item:focus .social-link {
-  background-color: #404bbf;
 }
 
 .social-link:hover,
